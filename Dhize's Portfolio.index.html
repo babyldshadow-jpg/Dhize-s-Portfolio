@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dhize H. Bueza — Portfolio</title>
+
+  <style>
+    :root {
+      --bg1: #FF99BA;
+      --bg2: #FF75A0;
+      --bg3: #FF4F81;
+      --card: rgba(255,255,255,0.06);
+      --border: rgba(255,255,255,0.12);
+      --accent: #FFFFFF;
+      --text: #FFF2F8;
+      --muted: #FFF2F8;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    /* BACKGROUND ANIMATION */
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, var(--bg1), var(--bg2), var(--bg3));
+      background-size: 400% 400%;
+      animation: scrollGradient 12s ease infinite;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+      color: var(--text);
+    }
+
+    @keyframes scrollGradient {
+      0% { background-position: 50% 0%; }
+      50% { background-position: 50% 100%; }
+      100% { background-position: 50% 0%; }
+    }
+
+    /* SUBTLE FLOAT ANIMATION */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+      100% { transform: translateY(0px); }
+    }
+
+    h1, .label {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 780px;
+      background: var(--card);
+      padding: 32px;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 40px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 32px;
+      color: var(--accent);
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 24px;
+      border: 3px solid var(--accent);
+    }
+
+    .avatar img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .section {
+      margin-bottom: 24px;
+      text-align: left;
+    }
+
+    .label {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--accent);
+    }
+
+    .value {
+      margin-left: 12px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .socials a {
+      display: block;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="avatar">
+      <img src="https://scontent.fmnl43-1.fna.fbcdn.net/v/t39.30808-6/566362084_810730871554097_378153355726195167_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFBQGsJW4rBIWVRcui6mDIzr7v_njoDC8yvu_-eOgMLzECXJQbaDkQ4AvKzDT60bsYmyV2Q7h5VMz3rQb1FMkzC&_nc_ohc=fGk5n4o0Xr4Q7kNvwFLIU38&_nc_oc=Adk4IGHSyK649P5gms_jwxS8wvLU9GlFrO111u6Rl1gyeh2oKOdm-Dp5z_590r89Fhs&_nc_zt=23&_nc_ht=scontent.fmnl43-1.fna&_nc_gid=23S7zOCo8-3bO_OeuKfFwQ&oh=00_Afh4GxMB6LVoBq5N0o0DoDl2sdIZzk7BBh-Z5Yw0bvULuQ&oe=692F07AC" 
+           alt="Avatar" width="120" height="120">
+    </div>
+
+    <h1>About Me</h1>
+
+    <div class="section">
+      <div class="label">Name:</div>
+      <div class="value">Dhize H. Bueza</div>
+    </div>
+
+    <div class="section">
+      <div class="label">Born In:</div>
+      <div class="value">May 22, 2007</div>
+    </div>
+
+    <div class="section">
+      <div class="label">Age:</div>
+      <div class="value">18</div>
+    </div>
+
+    <div class="section">
+      <div class="label">Education:</div>
+      <div class="value">
+        • Elementary: Doña Susana Elementary School (Binangonan, Rizal)<br>
+        • Junior High: Vicente Madrigal Integrated School (Binangonan, Rizal)<br>
+        • Senior High: Angono National High School (Angono, Rizal)<br>
+        • College:1st year college student in East System Colleges of Rizal<br>
+        • Taking Bachelor of Science in Information Technology (BSIT)
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="label">Hobbies & Interests:</div>
+      <div class="value">
+        • Gaming (FPS, MOBAs,RPGs category)<br>
+        • Singing <br>
+        • Cooking and/or Baking<br><br>
+
+
+        I became more interested with programming and coding, and actually grew fond of it when i started pursuing BSIT in East System Colleges of Rizal. Also interested in different gaming devices i could use in pursuit of my gaming hobbies. Such as, controllers, VR Box, PlayStation, etc. 
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="label">Contacts & Socials:</div>
+      <div class="value socials">
+        <a href="https://www.facebook.com/dhize.bueza.2025" target="_blank">Facebook</a>
+        <a href="mailto:dhizeb2@gmail.com">Email: dhizeb2@gmail.com</a>
+	<a href="Phone:0991-106-2328"</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
